@@ -8,7 +8,7 @@
 PRODUCT_NAME = pdouvch_sandbox_flutter
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = com.pdouvch.sandboxflutter.pdouvchSandboxFlutter
+PRODUCT_BUNDLE_IDENTIFIER = com.pdouvch.sandboxflutter
 
 // The copyright displayed in application information
-PRODUCT_COPYRIGHT = Copyright © 2024 com.pdouvch.sandbox_flutter. All rights reserved.
+PRODUCT_COPYRIGHT = Copyright © 2024 com.pdouvch.sandboxflutter. All rights reserved.
