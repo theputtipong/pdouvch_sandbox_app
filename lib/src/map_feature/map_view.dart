@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-
 import '../bloc/location_cubit.dart';
 import '../bloc/timer_cubit.dart';
 import 'map_controller.dart';
@@ -26,6 +25,12 @@ class MapView extends StatelessWidget {
         ],
         child: BlocBuilder<LocationCubit, LocationState>(
           builder: (context, state) {
+            if (state.error.isNotEmpty) {
+              return Center(
+                child: Text('Error: ${state.error}'),
+              );
+            }
+
             return Stack(
               children: [
                 GoogleMap(
@@ -45,6 +50,22 @@ class MapView extends StatelessWidget {
                 Positioned(
                   bottom: 16,
                   right: 16,
+                  child: FloatingActionButton(
+                    onPressed: () {
+                      final locationCubit = context.read<LocationCubit>();
+                      if (state.isTracking) {
+                        locationCubit.stopTracking();
+                      } else {
+                        locationCubit.startTracking();
+                      }
+                    },
+                    child: Icon(state.isTracking ? Icons.stop : Icons.play_arrow),
+                    tooltip: state.isTracking ? 'Stop Tracking' : 'Start Tracking',
+                  ),
+                ),
+                Positioned(
+                  bottom: 80,
+                  right: 16,
                   child: BlocBuilder<TimerCubit, TimerState>(
                     builder: (context, timerState) {
                       return FloatingActionButton(
@@ -54,8 +75,8 @@ class MapView extends StatelessWidget {
                               ? timerCubit.stopTimer()
                               : timerCubit.startTimer();
                         },
-                        tooltip: 'Time: ${timerState.duration.inSeconds} seconds',
                         child: const Icon(Icons.timer),
+                        tooltip: 'Time: ${timerState.duration.inSeconds} seconds',
                       );
                     },
                   ),
