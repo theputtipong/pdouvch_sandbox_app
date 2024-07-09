@@ -6,8 +6,6 @@ import '../bloc/timer_cubit.dart';
 import 'map_controller.dart';
 
 class MapView extends StatelessWidget {
-  static const routeName = '/map';
-
   const MapView({super.key});
 
   @override
@@ -59,8 +57,8 @@ class MapView extends StatelessWidget {
                         locationCubit.startTracking();
                       }
                     },
-                    child: Icon(state.isTracking ? Icons.stop : Icons.play_arrow),
                     tooltip: state.isTracking ? 'Stop Tracking' : 'Start Tracking',
+                    child: Icon(state.isTracking ? Icons.stop : Icons.play_arrow),
                   ),
                 ),
                 Positioned(
@@ -71,12 +69,14 @@ class MapView extends StatelessWidget {
                       return FloatingActionButton(
                         onPressed: () {
                           final timerCubit = context.read<TimerCubit>();
-                          timerCubit.state.duration.inSeconds % 2 == 0
-                              ? timerCubit.stopTimer()
-                              : timerCubit.startTimer();
+                          if (timerCubit.state.duration.inSeconds % 2 == 0) {
+                            timerCubit.stopTimer();
+                          } else {
+                            timerCubit.startTimer();
+                          }
                         },
-                        child: const Icon(Icons.timer),
                         tooltip: 'Time: ${timerState.duration.inSeconds} seconds',
+                        child: const Icon(Icons.timer),
                       );
                     },
                   ),
