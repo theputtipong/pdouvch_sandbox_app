@@ -22,15 +22,18 @@ class MapView extends StatelessWidget {
         ],
         child: BlocBuilder<LocationCubit, LocationState>(
           builder: (context, state) {
+            final locationCubit = context.read<LocationCubit>();
             if (state.error.isNotEmpty) {
               return Center(
                 child: Text('Error: ${state.error}'),
               );
             }
-
             return Stack(
               children: [
                 GoogleMap(
+                  onMapCreated: (GoogleMapController controller) {
+                    locationCubit.setGoogleMapController(controller: controller);
+                  },
                   initialCameraPosition: CameraPosition(
                     target: state.currentLocation ?? const LatLng(0, 0),
                     zoom: 14.0,
@@ -47,10 +50,9 @@ class MapView extends StatelessWidget {
                 ),
                 Positioned(
                   bottom: 16,
-                  right: 16,
+                  left: 16,
                   child: FloatingActionButton(
                     onPressed: () {
-                      final locationCubit = context.read<LocationCubit>();
                       if (state.isTracking) {
                         locationCubit.stopTracking();
                       } else {
@@ -63,7 +65,7 @@ class MapView extends StatelessWidget {
                 ),
                 Positioned(
                   bottom: 80,
-                  right: 16,
+                  left: 16,
                   child: BlocBuilder<TimerCubit, TimerState>(
                     builder: (context, timerState) {
                       return FloatingActionButton(
