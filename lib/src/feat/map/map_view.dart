@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import '../bloc/location_cubit.dart';
-import '../bloc/timer_cubit.dart';
-import 'map_controller.dart';
+import 'cubits/cubits.dart';
+import 'map_ctl.dart';
 
 class MapView extends StatelessWidget {
   const MapView({super.key});
@@ -33,7 +32,7 @@ class MapView extends StatelessWidget {
               children: [
                 GoogleMap(
                   initialCameraPosition: CameraPosition(
-                    target: state.routePoints.isNotEmpty ? state.routePoints.last : const LatLng(0, 0),
+                    target: state.currentLocation ?? const LatLng(0, 0),
                     zoom: 14.0,
                   ),
                   polylines: {
@@ -44,6 +43,7 @@ class MapView extends StatelessWidget {
                       width: 5,
                     ),
                   },
+                  myLocationEnabled: true,
                 ),
                 Positioned(
                   bottom: 16,

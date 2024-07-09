@@ -7,22 +7,26 @@ class LocationState {
   final List<LatLng> routePoints;
   final bool isTracking;
   final String error;
+  final LatLng? currentLocation;
 
   LocationState({
     this.routePoints = const [],
     this.isTracking = false,
     this.error = '',
+    this.currentLocation,
   });
 
   LocationState copyWith({
     List<LatLng>? routePoints,
     bool? isTracking,
     String? error,
+    LatLng? currentLocation,
   }) {
     return LocationState(
       routePoints: routePoints ?? this.routePoints,
       isTracking: isTracking ?? this.isTracking,
       error: error ?? this.error,
+      currentLocation: currentLocation ?? this.currentLocation,
     );
   }
 }
@@ -53,12 +57,28 @@ class LocationCubit extends Cubit<LocationState> {
       (position) {
         final newPoint = LatLng(position.latitude, position.longitude);
         final updatedPoints = List<LatLng>.from(state.routePoints)..add(newPoint);
-        emit(state.copyWith(routePoints: updatedPoints));
+        emit(state.copyWith(routePoints: updatedPoints, currentLocation: newPoint));
       },
       onError: (error) {
         emit(state.copyWith(error: error.toString()));
       },
     );
+  }
+
+  Future<void> getCurrentLocation() async {
+    try {
+      final hasPermission = await _handlePermission();
+      if (!hasPermission) {
+        emit(state.copyWith(error: 'Location permission denied'));
+        return;
+      }
+
+      final position = await _geolocator.getCurrentPosition();
+      final currentLocation = LatLng(position.latitude, position.longitude);
+      emit(state.copyWith(currentLocation: currentLocation));
+    } catch (e) {
+      emit(state.copyWith(error: e.toString()));
+    }
   }
 
   Future<bool> _handlePermission() async {

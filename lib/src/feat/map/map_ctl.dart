@@ -1,5 +1,5 @@
-import '../bloc/location_cubit.dart';
-import '../bloc/timer_cubit.dart';
+import 'cubits/location.dart';
+import 'cubits/timer.dart';
 
 class MapController {
   final LocationCubit locationCubit;
@@ -7,7 +7,9 @@ class MapController {
 
   MapController()
       : locationCubit = LocationCubit(),
-        timerCubit = TimerCubit();
+        timerCubit = TimerCubit() {
+    locationCubit.getCurrentLocation();
+  }
 
   void dispose() {
     locationCubit.close();
