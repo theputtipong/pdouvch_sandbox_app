@@ -44,12 +44,12 @@ if (flutterNdkVersion == null) {
 
 android {
     namespace = "com.pdouvch.sandboxflutter"
-    compileSdk = flutterCompileSdkVersion.toInteger()
-    ndkVersion = flutterNdkVersion.toDouble()
+    compileSdkVersion flutterCompileSdkVersion.toInteger()
+    ndkVersion flutterNdkVersion
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 
     defaultConfig {
@@ -63,17 +63,19 @@ android {
     buildTypes {
         release {
             signingConfig = signingConfigs.debug
+            shrinkResources true
             minifyEnabled true
-            proguardFiles 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         debug {
+            shrinkResources true
             minifyEnabled true
-            proguardFiles 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         profile {
+            shrinkResources true
             minifyEnabled true
-            debuggable true
-            proguardFiles 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
 }
