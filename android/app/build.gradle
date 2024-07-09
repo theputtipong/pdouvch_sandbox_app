@@ -5,7 +5,7 @@ plugins {
 }
 
 def flutterProperties = new Properties()
-def flutterPropertiesFile = rootProject.file("flutter.properties")
+def flutterPropertiesFile = rootProject.file("pdouvch_flutter.properties")
 if (flutterPropertiesFile.exists()) {
     flutterPropertiesFile.withReader("UTF-8") { reader ->
         flutterProperties.load(reader)
