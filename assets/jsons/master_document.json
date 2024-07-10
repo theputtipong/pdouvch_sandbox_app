@@ -1,0 +1,1391 @@
+{
+  "id": 1375,
+  "title": "Test form",
+  "type": {
+    "id": 2,
+    "label": "Inspection"
+  },
+  "status": {
+    "id": 1,
+    "label": "In Process"
+  },
+  "process": {
+    "id": 1,
+    "label": "Review"
+  },
+  "code": "CMPRO-I00292",
+  "due_date": "2024-07-11T16:59:59.999000Z",
+  "order": 0,
+  "deleted": null,
+  "drawing_number": null,
+  "cost_impact": -1.0,
+  "description": "<p><span style=\"color: rgb(114, 132, 154);\">Test description 5</span></p>",
+  "location": {
+    "calculation": null,
+    "created_at": "2023-03-09T04:09:53.131358Z",
+    "custom_field_list": [],
+    "display_name": "location A ห้ามลบ-Copy 2",
+    "facility": {
+      "address": "-",
+      "code": "1234",
+      "country": "Canada",
+      "created_at": "2022-11-03T02:34:40.347172Z",
+      "currency": null,
+      "description": "Second test",
+      "id": 1,
+      "image": "SwiftDynamics/065bf891-7fd2-40dd-86d3-a46d09332499/facility/logo/f9de4b75-5bbe-4872-ae85-fe0242440a7a",
+      "time_zone": "(GMT-09:00) Alaska Time",
+      "title": "Mobile Location Team",
+      "updated_at": "2024-06-05T08:34:08.614031Z"
+    },
+    "have_child": true,
+    "id": 98,
+    "image": "SwiftDynamics/065bf891-7fd2-40dd-86d3-a46d09332499/logo/pexels-james-wheeler-1619317.jpg",
+    "parent": null,
+    "parents": [],
+    "setting": null,
+    "title": "location A ห้ามลบ-Copy 2",
+    "updated_at": "2024-01-30T07:30:27.208334Z",
+    "url": "https://fmdev.page.link/BwXRiRrbJBSuZHT66"
+  },
+  "is_private": false,
+  "cycle": 0,
+  "assignee": {
+    "due_date": "2024-07-09T00:00:00Z",
+    "files": [],
+    "id": 226,
+    "response": null,
+    "response_date": null,
+    "status": {
+      "id": 0,
+      "label": "Pending"
+    },
+    "user": {
+      "id": 1,
+      "label": "Superioradmin Sitearound"
+    },
+    "work_order": {
+      "id": 211,
+      "label": "Test wo"
+    }
+  },
+  "assignees": [
+    {
+      "id": 2970,
+      "state": {
+        "id": 0,
+        "label": "Or"
+      },
+      "status": {
+        "id": 0,
+        "label": "Pending"
+      },
+      "user": {
+        "id": 1,
+        "full_name": "Superioradmin Sitearound"
+      },
+      "document": {
+        "id": 1375,
+        "code": "CMPRO-I00292"
+      },
+      "files": [],
+      "is_all_sub_assignee_done": true,
+      "created_at": "2024-07-09T02:33:49.126390Z",
+      "updated_at": "2024-07-09T02:33:49.126399Z",
+      "order": 0,
+      "due_date": "2024-07-10T16:59:59.999000Z",
+      "response": null,
+      "response_date": null,
+      "round": 0,
+      "cycle": 0,
+      "rejected_to": "",
+      "is_latest": true,
+      "is_open": false,
+      "is_official": false,
+      "created_by": {
+        "id": 1,
+        "full_name": "Superioradmin Sitearound"
+      },
+      "updated_by": {
+        "id": 1,
+        "full_name": "Superioradmin Sitearound"
+      }
+    }
+  ],
+  "manager": {
+    "id": 1437,
+    "user": {
+      "id": 1,
+      "full_name": "Superioradmin Sitearound",
+      "label": "Superioradmin Sitearound"
+    },
+    "work_order": {
+      "id": 211,
+      "label": "Test wo"
+    },
+    "status": {
+      "id": 0,
+      "label": "Pending"
+    },
+    "files": [],
+    "created_at": "2024-07-09T02:33:49.122472Z",
+    "updated_at": "2024-07-09T02:33:49.122480Z",
+    "due_date": "2024-07-11T16:59:59.999000Z",
+    "response": null,
+    "response_date": null,
+    "round": 0,
+    "cycle": 0,
+    "is_latest": true,
+    "is_official": false,
+    "rejected_to": null,
+    "created_by": {
+      "id": 1,
+      "full_name": "Superioradmin Sitearound"
+    },
+    "updated_by": {
+      "id": 1,
+      "full_name": "Superioradmin Sitearound"
+    },
+    "document": {
+      "id": 1375,
+      "code": "CMPRO-I00292"
+    },
+    "duration": 0,
+    "group_responder": null,
+    "manager_cycle": 0,
+    "manager_round": 0,
+    "mode": 0,
+    "responded_date": null,
+    "responder": [
+      {
+        "company": {
+          "address": null,
+          "city": null,
+          "code": "SWD",
+          "country": null,
+          "description": null,
+          "email": null,
+          "end": null,
+          "id": 3,
+          "image": "SwiftDynamics/b1f7a66c-515a-4230-99f0-6d131eb09f1a/company/logo/dc9cfff8-b946-436a-afe0-497e9e877482",
+          "level": 0,
+          "name": null,
+          "organization": {
+            "code": "SWD",
+            "id": 1,
+            "logo": null,
+            "storage_usage": 6312961563,
+            "title": "SwiftDynamics"
+          },
+          "phone": null,
+          "postcode": null,
+          "province": null,
+          "service": null,
+          "start": null,
+          "timezone": null,
+          "title": "Swift Dynamics",
+          "user_count": 21
+        },
+        "email": "superadmin@swiftdynamics.co.th",
+        "first_name": "Superadmin",
+        "full_name": "Superadmin SWD",
+        "id": 1,
+        "is_notification": false,
+        "is_superuser": true,
+        "last_login": "2024-06-20T07:59:24.783733Z",
+        "last_name": "SWD",
+        "organization": {
+          "code": "SWD",
+          "id": 1,
+          "logo": null,
+          "storage_usage": 6312961563,
+          "title": "SwiftDynamics"
+        },
+        "permission": 0,
+        "phone": "082804131945454",
+        "position": "Project Manager",
+        "shortcut_name": "SS",
+        "unit_cost": 1234
+      }
+    ],
+    "responsed_by": {
+      "company": {
+        "address": null,
+        "city": null,
+        "code": "SWD",
+        "country": null,
+        "description": null,
+        "email": null,
+        "end": null,
+        "id": 3,
+        "image": "SwiftDynamics/b1f7a66c-515a-4230-99f0-6d131eb09f1a/company/logo/dc9cfff8-b946-436a-afe0-497e9e877482",
+        "level": 0,
+        "name": null,
+        "organization": {
+          "code": "SWD",
+          "id": 1,
+          "logo": null,
+          "storage_usage": 6312961563,
+          "title": "SwiftDynamics"
+        },
+        "phone": null,
+        "postcode": null,
+        "province": null,
+        "service": null,
+        "start": null,
+        "timezone": null,
+        "title": "Swift Dynamics",
+        "user_count": 21
+      },
+      "email": "superadmin@swiftdynamics.co.th",
+      "first_name": "Superadmin",
+      "full_name": "Superadmin SWD",
+      "id": 1,
+      "is_notification": false,
+      "is_superuser": true,
+      "last_login": "2024-06-20T07:59:24.783733Z",
+      "last_name": "SWD",
+      "organization": {
+        "code": "SWD",
+        "id": 1,
+        "logo": null,
+        "storage_usage": 6312961563,
+        "title": "SwiftDynamics"
+      },
+      "permission": 0,
+      "phone": "082804131945454",
+      "position": "Project Manager",
+      "shortcut_name": "SS",
+      "unit_cost": 1234
+    },
+    "role_responder": null
+  },
+  "distribution_list": [
+    {
+      "id": 1,
+      "full_name": "Superioradmin Sitearound",
+      "company": {
+        "address": null,
+        "city": null,
+        "code": "1234",
+        "country": null,
+        "description": null,
+        "email": null,
+        "end": null,
+        "id": 1,
+        "image": "SwiftDynamics/b1f7a66c-515a-4230-99f0-6d131eb09f1a/company/logo/0b2069ce-6c7b-4bef-b337-33f0654b489f",
+        "level": 0,
+        "name": null,
+        "organization": {
+          "code": "SWD",
+          "id": 1,
+          "logo": null,
+          "storage_usage": 6312961563,
+          "title": "SwiftDynamics"
+        },
+        "phone": null,
+        "postcode": null,
+        "province": null,
+        "service": null,
+        "start": null,
+        "timezone": null,
+        "title": "Mobile team",
+        "user_count": 18
+      },
+      "email": "Davinci@swiftdynamics.co.th",
+      "first_name": "Dall",
+      "is_notification": false,
+      "is_superuser": false,
+      "last_login": null,
+      "last_name": "Vinci",
+      "organization": {
+        "code": "SWD",
+        "id": 1,
+        "logo": null,
+        "storage_usage": 6312961563,
+        "title": "SwiftDynamics"
+      },
+      "permission": 0,
+      "phone": "0",
+      "position": "Frontend",
+      "shortcut_name": "DV",
+      "unit_cost": 1
+    }
+  ],
+  "specification": {
+    "id": 10,
+    "label": "WIP AR"
+  },
+  "discipline": {
+    "id": 1,
+    "label": "General"
+  },
+  "schedule_impact": -1.0,
+  "template": {
+    "id": 37,
+    "label": "General Template 1",
+    "created_at": "2023-10-20T07:54:14.503538Z",
+    "created_by": {
+      "company": {
+        "address": null,
+        "city": null,
+        "code": "SWD",
+        "country": null,
+        "description": null,
+        "email": null,
+        "end": null,
+        "id": 3,
+        "image": "SwiftDynamics/b1f7a66c-515a-4230-99f0-6d131eb09f1a/company/logo/dc9cfff8-b946-436a-afe0-497e9e877482",
+        "level": 0,
+        "name": null,
+        "organization": {
+          "code": "SWD",
+          "id": 1,
+          "logo": null,
+          "storage_usage": 6312961563,
+          "title": "SwiftDynamics"
+        },
+        "phone": null,
+        "postcode": null,
+        "province": null,
+        "service": null,
+        "start": null,
+        "timezone": null,
+        "title": "Swift Dynamics",
+        "user_count": 21
+      },
+      "email": "superadmin@swiftdynamics.co.th",
+      "first_name": "Superadmin",
+      "full_name": "Superadmin SWD",
+      "id": 1,
+      "is_notification": false,
+      "is_superuser": true,
+      "last_login": "2024-06-20T07:59:24.783733Z",
+      "last_name": "SWD",
+      "organization": {
+        "code": "SWD",
+        "id": 1,
+        "logo": null,
+        "storage_usage": 6312961563,
+        "title": "SwiftDynamics"
+      },
+      "permission": 0,
+      "phone": "082804131945454",
+      "position": "Project Manager",
+      "shortcut_name": "SS",
+      "unit_cost": 1234
+    },
+    "description": 0,
+    "facility": {
+      "address": "-",
+      "code": "1234",
+      "country": "Canada",
+      "created_at": "2022-11-03T02:34:40.347172Z",
+      "currency": null,
+      "description": "Second test",
+      "id": 1,
+      "image": "SwiftDynamics/065bf891-7fd2-40dd-86d3-a46d09332499/facility/logo/f9de4b75-5bbe-4872-ae85-fe0242440a7a",
+      "time_zone": "(GMT-09:00) Alaska Time",
+      "title": "Mobile Location Team",
+      "updated_at": "2024-06-05T08:34:08.614031Z"
+    },
+    "location": null,
+    "template_type": 1,
+    "title": "FMMMMMFM",
+    "updated_at": "2024-05-29T08:10:02.965041Z",
+    "url": "https://fm-dev.sitearound.com/document_template/view/830/?facility=1"
+  },
+  "created_at": "2024-07-09T02:33:49.100374Z",
+  "updated_at": "2024-07-09T02:33:49.100384Z",
+  "project": {
+    "id": 3,
+    "code": "CMPRO",
+    "title": "CM Project",
+    "company": {
+      "id": 1,
+      "code": "SWD",
+      "title": "Swift Dynamics"
+    }
+  },
+  "responsible_contractor": null,
+  "received_from": null,
+  "is_respondable": true,
+  "is_recently_rejected": false,
+  "overrule_markup_list": [],
+  "created_by": {
+    "_comment": "//TODO! @theputtipong fm this case recive from string only",
+    "id": 1,
+    "full_name": "Superioradmin Sitearound",
+    "company": {
+      "address": null,
+      "city": null,
+      "code": "SWD",
+      "country": null,
+      "description": null,
+      "email": null,
+      "end": null,
+      "id": 3,
+      "image": "SwiftDynamics/b1f7a66c-515a-4230-99f0-6d131eb09f1a/company/logo/dc9cfff8-b946-436a-afe0-497e9e877482",
+      "level": 0,
+      "name": null,
+      "organization": {
+        "code": "SWD",
+        "id": 1,
+        "logo": null,
+        "storage_usage": 6312961563,
+        "title": "SwiftDynamics"
+      },
+      "phone": null,
+      "postcode": null,
+      "province": null,
+      "service": null,
+      "start": null,
+      "timezone": null,
+      "title": "Swift Dynamics",
+      "user_count": 21
+    },
+    "email": "superadmin@swiftdynamics.co.th",
+    "first_name": "Superadmin",
+    "is_accept_terms": false,
+    "last_name": "SWD",
+    "organization": {
+      "code": "SWD",
+      "id": 1,
+      "logo": null,
+      "storage_usage": 6312961563,
+      "title": "SwiftDynamics"
+    },
+    "permission": 0,
+    "position": "Project Manager",
+    "shortcut_name": "SS",
+    "unit_cost": 1234,
+    "username": "superadmin@swiftdynamics.co.th"
+  },
+  "updated_by": {
+    "id": 1,
+    "full_name": "Superioradmin Sitearound"
+  },
+  "ball_in_court": [
+    {
+      "id": 1,
+      "_comment": "//TODO! @theputtipong case fm detail it not object but is list string will map again with to this object",
+      "full_name": "Superioradmin Sitearound"
+    }
+  ],
+  "delayed": 3,
+  "has_file": false,
+  "files": [
+    {
+      "document_file_id": 1539,
+      "id": 3973,
+      "path": "SwiftDynamics/065bf891-7fd2-40dd-86d3-a46d09332499/Work Request/1234-WR00233/bg_logo.png",
+      "title": "bg_logo.png",
+      "type": "image/png",
+      "url": "https://fm-sitearound-dev-storage.s3.amazonaws.com/SwiftDynamics/065bf891-7fd2-40dd-86d3-a46d09332499/Work%20Request/1234-WR00233/bg_logo.png?AWSAccessKeyId=AKIAV27WOJCVVCWU5CHE&Signature=enHd2XDOc4s1835NlqKr1kAuqUY%3D&Expires=1718873978"
+    }
+  ],
+  "inspection": {
+    "id": 766,
+    "user": {
+      "id": 1,
+      "full_name": "Superioradmin Sitearound"
+    },
+    "users": [
+      {
+        "id": 1,
+        "full_name": "Superioradmin Sitearound"
+      }
+    ],
+    "response_user": {},
+    "created_at": "2024-07-09T02:33:49.130516Z",
+    "updated_at": "2024-07-09T08:28:55.795470Z",
+    "due_date": "2024-07-09T16:59:59.999000Z",
+    "status": {
+      "id": 0,
+      "label": "Pending"
+    },
+    "response": null,
+    "response_date": null,
+    "round": 0,
+    "cycle": 0,
+    "is_latest": true,
+    "stat": {
+      "n/a": 0,
+      "type": 2,
+      "total": 9,
+      "pending": 1,
+      "respond": 8
+    },
+    "score": 0.0,
+    "max_score": 0.0,
+    "created_by": {
+      "id": 1,
+      "full_name": "Superioradmin Sitearound"
+    },
+    "updated_by": {
+      "id": 1,
+      "full_name": "Superioradmin Sitearound"
+    },
+    "form": 7,
+    "document": {
+      "id": 1375,
+      "code": "CMPRO-I00292"
+    },
+    "form_type": 2,
+    "files": []
+  },
+  "sections": [
+    {
+      "id": 853,
+      "title": "Title 1",
+      "order": 0,
+      "sub_sections": [
+        {
+          "id": 2579,
+          "deleted": null,
+          "deleted_by_cascade": false,
+          "created_at": "2024-07-09T02:33:49.250599Z",
+          "updated_at": "2024-07-09T02:33:49.250611Z",
+          "title": "AB",
+          "description": "",
+          "order": 0,
+          "type": {
+            "id": 104,
+            "choices": [
+              {
+                "color": "#000000",
+                "label": "A"
+              },
+              {
+                "color": "#000000",
+                "label": "B"
+              },
+              {
+                "color": "#000000",
+                "label": "C"
+              },
+              {
+                "color": "#000000",
+                "label": "D"
+              }
+            ],
+            "is_score": false,
+            "response_type": 7,
+            "is_multiselect": false
+          },
+          "created_by": 1,
+          "updated_by": 1,
+          "section": 853,
+          "comments": [],
+          "response": {
+            "id": 1363,
+            "result": "\"n/a\"",
+            "files": []
+          },
+          "files": [],
+          "work_orders": []
+        },
+        {
+          "id": 2580,
+          "deleted": null,
+          "deleted_by_cascade": false,
+          "created_at": "2024-07-09T02:33:49.259008Z",
+          "updated_at": "2024-07-09T02:33:49.259018Z",
+          "title": "custom result",
+          "description": "",
+          "order": 1,
+          "type": {
+            "id": 26,
+            "choices": [
+              {
+                "color": "#000000",
+                "label": "ดี"
+              },
+              {
+                "color": "#E6E6E6",
+                "label": "ปานกลาง"
+              },
+              {
+                "color": "#FF5858",
+                "label": "แย่"
+              }
+            ],
+            "is_score": false,
+            "response_type": 7,
+            "is_multiselect": false
+          },
+          "created_by": 1,
+          "updated_by": 1,
+          "section": 853,
+          "comments": [],
+          "response": {
+            "id": 1364,
+            "result": "\"\\u0e41\\u0e22\\u0e48\"",
+            "files": []
+          },
+          "files": [],
+          "work_orders": []
+        },
+        {
+          "id": 2581,
+          "deleted": null,
+          "deleted_by_cascade": false,
+          "created_at": "2024-07-09T02:33:49.260011Z",
+          "updated_at": "2024-07-09T02:33:49.260021Z",
+          "title": "date",
+          "description": "",
+          "order": 2,
+          "type": {
+            "id": 5,
+            "choices": [],
+            "is_score": false,
+            "response_type": 5,
+            "is_multiselect": false
+          },
+          "created_by": 1,
+          "updated_by": 1,
+          "section": 853,
+          "comments": [
+            {
+              "id": 346,
+              "created_at": "2024-07-09T08:29:23.613571Z",
+              "updated_at": "2024-07-09T08:29:23.613581Z",
+              "comment": "test",
+              "sub_section": 2581,
+              "created_by": {
+                "id": 1,
+                "full_name": "Superioradmin Sitearound"
+              },
+              "updated_by": {
+                "id": 1,
+                "full_name": "Superioradmin Sitearound"
+              },
+              "file": null
+            },
+            {
+              "id": 347,
+              "created_at": "2024-07-09T08:29:29.854081Z",
+              "updated_at": "2024-07-09T08:29:29.854092Z",
+              "comment": "test",
+              "sub_section": 2581,
+              "created_by": {
+                "id": 1,
+                "full_name": "Superioradmin Sitearound"
+              },
+              "updated_by": {
+                "id": 1,
+                "full_name": "Superioradmin Sitearound"
+              },
+              "file": null
+            }
+          ],
+          "response": {
+            "id": 1356,
+            "result": "\"2024-07-15 00:00:00.000\"",
+            "files": []
+          },
+          "files": [],
+          "work_orders": [
+            {
+              "id": 211,
+              "code": "CMPRO-W00093",
+              "title": "Test wo",
+              "defect_type": null,
+              "process": 2,
+              "status": 1,
+              "due_date": "2024-07-09T16:59:59Z",
+              "has_work_order_permission": true
+            }
+          ]
+        },
+        {
+          "id": 2582,
+          "deleted": null,
+          "deleted_by_cascade": false,
+          "created_at": "2024-07-09T02:33:49.260902Z",
+          "updated_at": "2024-07-09T02:33:49.260911Z",
+          "title": "instruction",
+          "description": "",
+          "order": 3,
+          "type": {
+            "id": 28,
+            "choices": [],
+            "is_score": false,
+            "response_type": 8,
+            "is_multiselect": false
+          },
+          "created_by": 1,
+          "updated_by": 1,
+          "section": 853,
+          "comments": [],
+          "response": {
+            "id": 1352,
+            "result": "\"open\"",
+            "files": []
+          },
+          "files": [
+            {
+              "id": 81,
+              "uuid": "61a55602-2697-4b3b-a668-af2ea6640d90",
+              "title": "20240409102445-export-inspection.pdf",
+              "path": "project/dc94229f-5d79-4290-a7c8-e8c884086684/sub_section/61a55602-2697-4b3b-a668-af2ea6640d90/20240409102445-export-inspection.pdf",
+              "url": "https://cm-dev-cdn.sitearound.com/media/project/dc94229f-5d79-4290-a7c8-e8c884086684/sub_section/61a55602-2697-4b3b-a668-af2ea6640d90/20240409102445-export-inspection.pdf?versionId=MAnrbMBfu67lc.T6BTAmw01WF4XcOo2F&Expires=1720582678&Signature=QeBWQKFHoB2-k0-AKcp6h3q9A0jU-xzsRKLlgekHjHILkkwxKvu9RPdPCpE5HkVCWpBNbtYF4UkTJo6N6gjDA2kxcWW~Ux8lxBKuMUlTHoMEjWDovfnsQJKAl~JnuFuGKnsmpy1FC2ymmarhCaPDX6n-lk8x~UWQAv5hTUeivzxfURf8QAXfoew~hkd2Vit9GZvCZDXsom9xq9LUWvzOShBPwO3~v3Z7i6Vmsa-qDQMZ5akMsu1QUY~OTu5Lke5eU1FINW8tE7~zAfVcI2ynCdPQ5xQJmzKwe4wiZJlIJCzJUINvlHJNViFybX2wbdDa3BzkArBl9vcqHqTUlTrnLQ__&Key-Pair-Id=K2WNQZ2B00K4YF",
+              "type": "application/pdf",
+              "thumbnail": null,
+              "markup": null,
+              "form": null
+            }
+          ],
+          "work_orders": []
+        },
+        {
+          "id": 2583,
+          "deleted": null,
+          "deleted_by_cascade": false,
+          "created_at": "2024-07-09T02:33:49.373958Z",
+          "updated_at": "2024-07-09T02:33:49.373970Z",
+          "title": "score",
+          "description": "",
+          "order": 4,
+          "type": {
+            "id": 2,
+            "choices": [],
+            "is_score": false,
+            "response_type": 2,
+            "is_multiselect": false
+          },
+          "created_by": 1,
+          "updated_by": 1,
+          "section": 853,
+          "comments": [],
+          "response": {
+            "id": 1354,
+            "result": "\"3\"",
+            "files": []
+          },
+          "files": [],
+          "work_orders": []
+        },
+        {
+          "id": 2584,
+          "deleted": null,
+          "deleted_by_cascade": false,
+          "created_at": "2024-07-09T02:33:49.375010Z",
+          "updated_at": "2024-07-09T02:33:49.375020Z",
+          "title": "signature",
+          "description": "",
+          "order": 5,
+          "type": {
+            "id": 9,
+            "choices": [],
+            "is_score": false,
+            "response_type": 10,
+            "is_multiselect": false
+          },
+          "created_by": 1,
+          "updated_by": 1,
+          "section": 853,
+          "comments": [],
+          "response": {
+            "id": 1350,
+            "result": "\"n/a\"",
+            "files": []
+          },
+          "files": [],
+          "work_orders": []
+        },
+        {
+          "id": 2585,
+          "deleted": null,
+          "deleted_by_cascade": false,
+          "created_at": "2024-07-09T02:33:49.375905Z",
+          "updated_at": "2024-07-09T02:33:49.375914Z",
+          "title": "take a photo",
+          "description": "",
+          "order": 6,
+          "type": {
+            "id": 29,
+            "choices": [],
+            "is_score": false,
+            "response_type": 9,
+            "is_multiselect": false
+          },
+          "created_by": 1,
+          "updated_by": 1,
+          "section": 853,
+          "comments": [],
+          "response": {
+            "id": 1349,
+            "result": "\"n/a\"",
+            "files": []
+          },
+          "files": [],
+          "work_orders": []
+        },
+        {
+          "id": 2586,
+          "deleted": null,
+          "deleted_by_cascade": false,
+          "created_at": "2024-07-09T02:33:49.376753Z",
+          "updated_at": "2024-07-09T02:33:49.376762Z",
+          "title": "text",
+          "description": "",
+          "order": 7,
+          "type": {
+            "id": 3,
+            "choices": [],
+            "is_score": false,
+            "response_type": 3,
+            "is_multiselect": false
+          },
+          "created_by": 1,
+          "updated_by": 1,
+          "section": 853,
+          "comments": [],
+          "response": null,
+          "files": [],
+          "work_orders": []
+        },
+        {
+          "id": 2587,
+          "deleted": null,
+          "deleted_by_cascade": false,
+          "created_at": "2024-07-09T02:33:49.377648Z",
+          "updated_at": "2024-07-09T02:33:49.377656Z",
+          "title": "yes no",
+          "description": "",
+          "order": 8,
+          "type": {
+            "id": 14,
+            "choices": [
+              {
+                "color": "#32C040",
+                "label": "Yes"
+              },
+              {
+                "color": "#FF5858",
+                "label": "No"
+              }
+            ],
+            "is_score": false,
+            "response_type": 7,
+            "is_multiselect": false
+          },
+          "created_by": 1,
+          "updated_by": 1,
+          "section": 853,
+          "comments": [],
+          "response": {
+            "id": 1362,
+            "result": "\"n/a\"",
+            "files": []
+          },
+          "files": [],
+          "work_orders": []
+        }
+      ]
+    }
+  ],
+  "inspection_test_plan": null,
+  "stat": {
+    "n/a": 0,
+    "type": 2,
+    "total": 9,
+    "pending": 1,
+    "respond": 8
+  },
+  "submittal": {
+    "id": 430,
+    "user": {
+      "id": 1,
+      "full_name": "Superioradmin Sitearound"
+    },
+    "status": {
+      "id": 2,
+      "label": "Approved"
+    },
+    "created_by": {
+      "id": 1,
+      "full_name": "Superioradmin Sitearound"
+    },
+    "updated_by": {
+      "id": 1,
+      "full_name": "Superioradmin Sitearound"
+    },
+    "deleted": null,
+    "deleted_by_cascade": false,
+    "created_at": "2024-07-09T07:11:55.817693Z",
+    "updated_at": "2024-07-09T07:16:05.432022Z",
+    "document_number": "234243",
+    "rev": "32",
+    "due_date": "2024-07-09T16:59:59.999000Z",
+    "response": "test",
+    "response_date": "2024-07-09T07:16:05.423237Z",
+    "round": 0,
+    "cycle": 0,
+    "is_latest": true,
+    "rejected_to": null,
+    "document": 1377,
+    "files": []
+  },
+  "user_inspection_general": [
+    {
+      "value": 21,
+      "label": "Bank  testCHPP2"
+    },
+    {
+      "value": 20,
+      "label": "Bank testCHPP"
+    },
+    {
+      "value": 13,
+      "label": "Chanin Lawlertrattana"
+    },
+    {
+      "value": 50,
+      "label": "Pattarit General"
+    },
+    {
+      "value": 4,
+      "label": "Pattarit Suriyathakerng | G002"
+    },
+    {
+      "value": 8,
+      "label": "SWD - Supawan Koomkam"
+    },
+    {
+      "value": 49,
+      "label": "SWD - Yanisa Jitmun"
+    },
+    {
+      "value": 11,
+      "label": "Sapjarern Udomviriyalanon"
+    },
+    {
+      "value": 45,
+      "label": "Sirichai Saeaiew"
+    },
+    {
+      "value": 3,
+      "label": "Supawan Koomkam"
+    },
+    {
+      "value": 1,
+      "label": "Superioradmin Sitearound | G002, G001"
+    },
+    {
+      "value": 56,
+      "label": "Tanakorn AP"
+    },
+    {
+      "value": 16,
+      "label": "Test 1"
+    },
+    {
+      "value": 18,
+      "label": "Test 3"
+    },
+    {
+      "value": 19,
+      "label": "Test 4"
+    },
+    {
+      "value": 26,
+      "label": "Test Naja"
+    },
+    {
+      "value": 22,
+      "label": "Test Tum"
+    },
+    {
+      "value": 23,
+      "label": "Test Tum 2"
+    },
+    {
+      "value": 24,
+      "label": "Tum Nuttapat"
+    },
+    {
+      "value": 52,
+      "label": "Unikwan Cutie"
+    },
+    {
+      "value": 2,
+      "label": "Varit J"
+    },
+    {
+      "value": 9,
+      "label": "supawan koomkam"
+    }
+  ],
+  "from_inspection": {
+    "id": 1375,
+    "label": "CMPRO-I00292 | Test form"
+  },
+  "sub_section": 2581,
+  "section": {
+    "document": 1375,
+    "has_inspection_permission": true,
+    "id": 853,
+    "order": 0,
+    "sub_section": {
+      "comments": [
+        {
+          "comment": "test",
+          "created_at": "2024-07-09T08:29:23.613571Z",
+          "created_by": {
+            "full_name": "Superioradmin Sitearound",
+            "id": 1
+          },
+          "file": null,
+          "id": 346,
+          "sub_section": 2581,
+          "updated_at": "2024-07-09T08:29:23.613581Z",
+          "updated_by": {
+            "full_name": "Superioradmin Sitearound",
+            "id": 1
+          }
+        },
+        {
+          "comment": "test",
+          "created_at": "2024-07-09T08:29:29.854081Z",
+          "created_by": {
+            "full_name": "Superioradmin Sitearound",
+            "id": 1
+          },
+          "file": null,
+          "id": 347,
+          "sub_section": 2581,
+          "updated_at": "2024-07-09T08:29:29.854092Z",
+          "updated_by": {
+            "full_name": "Superioradmin Sitearound",
+            "id": 1
+          }
+        }
+      ],
+      "description": "",
+      "files": [],
+      "id": 2581,
+      "order": 2,
+      "response": {
+        "files": [],
+        "id": 1356,
+        "result": "\"2024-07-15 00:00:00.000\""
+      },
+      "title": "date",
+      "type": {
+        "choices": [],
+        "id": 5,
+        "is_multiselect": false,
+        "is_score": false,
+        "response_type": 5
+      }
+    },
+    "title": "Title 1"
+  },
+  "acknowledge_manager": {
+    "document_manager": {
+      "mode": 0,
+      "responder": [
+        {
+          "id": 1,
+          "first_name": "Superadmin",
+          "last_name": "SWD",
+          "full_name": "Superadmin SWD",
+          "shortcut_name": "SS",
+          "email": "superadmin@swiftdynamics.co.th",
+          "position": "Project Manager",
+          "company": {
+            "id": 3,
+            "code": "SWD",
+            "title": "Swift Dynamics",
+            "service": null,
+            "start": null,
+            "end": null,
+            "description": null,
+            "name": null,
+            "email": null,
+            "phone": null,
+            "country": null,
+            "address": null,
+            "city": null,
+            "province": null,
+            "postcode": null,
+            "timezone": null,
+            "level": 0,
+            "organization": {
+              "id": 1,
+              "title": "SwiftDynamics",
+              "code": "SWD",
+              "logo": null,
+              "storage_usage": 6312961563
+            },
+            "image": "SwiftDynamics/b1f7a66c-515a-4230-99f0-6d131eb09f1a/company/logo/dc9cfff8-b946-436a-afe0-497e9e877482",
+            "user_count": 21
+          },
+          "phone": "082804131945454",
+          "is_notification": false,
+          "unit_cost": 1234.0,
+          "last_login": "2024-06-20T07:59:24.783733Z",
+          "organization": {
+            "id": 1,
+            "title": "SwiftDynamics",
+            "code": "SWD",
+            "logo": null,
+            "storage_usage": 6312961563
+          },
+          "permission": 0,
+          "is_superuser": true
+        }
+      ],
+      "role_responder": null,
+      "group_responder": null,
+      "status": 1,
+      "due_date": "2024-06-24T08:14:17.487000Z",
+      "responded_date": null,
+      "responsed_by": {
+        "id": 1,
+        "first_name": "Superadmin",
+        "last_name": "SWD",
+        "full_name": "Superadmin SWD",
+        "shortcut_name": "SS",
+        "email": "superadmin@swiftdynamics.co.th",
+        "position": "Project Manager",
+        "company": {
+          "id": 3,
+          "code": "SWD",
+          "title": "Swift Dynamics",
+          "service": null,
+          "start": null,
+          "end": null,
+          "description": null,
+          "name": null,
+          "email": null,
+          "phone": null,
+          "country": null,
+          "address": null,
+          "city": null,
+          "province": null,
+          "postcode": null,
+          "timezone": null,
+          "level": 0,
+          "organization": {
+            "id": 1,
+            "title": "SwiftDynamics",
+            "code": "SWD",
+            "logo": null,
+            "storage_usage": 6312961563
+          },
+          "image": "SwiftDynamics/b1f7a66c-515a-4230-99f0-6d131eb09f1a/company/logo/dc9cfff8-b946-436a-afe0-497e9e877482",
+          "user_count": 21
+        },
+        "phone": "082804131945454",
+        "is_notification": false,
+        "unit_cost": 1234.0,
+        "last_login": "2024-06-20T07:59:24.783733Z",
+        "organization": {
+          "id": 1,
+          "title": "SwiftDynamics",
+          "code": "SWD",
+          "logo": null,
+          "storage_usage": 6312961563
+        },
+        "permission": 0,
+        "is_superuser": true,
+        "status": 1
+      },
+      "response": null,
+      "manager_round": 0,
+      "manager_cycle": 0,
+      "is_latest": true,
+      "duration": 0,
+      "files": []
+    },
+    "status": 9,
+    "response": "<p>ไปประเมินนะ</p>",
+    "response_date": "2024-06-12T08:14:48.762901Z",
+    "files": []
+  },
+  "ball_in_court_date": "2024-06-24T08:14:17.487000Z",
+  "categories": [
+    {
+      "code": "General",
+      "created_at": "2022-11-11T04:16:57.055312Z",
+      "id": 2,
+      "title": "General",
+      "updated_at": "2023-09-06T08:40:19.024296Z"
+    }
+  ],
+  "completion_date": null,
+  "custom_field_list": [
+    {
+      "custom_field": {
+        "created_by": "Superadmin SWD",
+        "field_id": 1534,
+        "title": "Test custom field",
+        "value_option": 0,
+        "value_type": 0
+      },
+      "files": [],
+      "value": "enesnesn",
+      "value_id": 25790
+    }
+  ],
+
+  "downtime": 0,
+  "facility": {
+    "calculation": null,
+    "created_at": "2023-03-09T04:09:53.131358Z",
+    "custom_field_list": [],
+    "display_name": "location A ห้ามลบ-Copy 2",
+    "facility": {
+      "address": "-",
+      "code": "1234",
+      "country": "Canada",
+      "created_at": "2022-11-03T02:34:40.347172Z",
+      "currency": null,
+      "description": "Second test",
+      "id": 1,
+      "image": "SwiftDynamics/065bf891-7fd2-40dd-86d3-a46d09332499/facility/logo/f9de4b75-5bbe-4872-ae85-fe0242440a7a",
+      "time_zone": "(GMT-09:00) Alaska Time",
+      "title": "Mobile Location Team",
+      "updated_at": "2024-06-05T08:34:08.614031Z"
+    },
+    "have_child": true,
+    "id": 98,
+    "image": "SwiftDynamics/065bf891-7fd2-40dd-86d3-a46d09332499/logo/pexels-james-wheeler-1619317.jpg",
+    "parent": null,
+    "parents": [],
+    "setting": null,
+    "title": "location A ห้ามลบ-Copy 2",
+    "updated_at": "2024-01-30T07:30:27.208334Z",
+    "url": "https://fmdev.page.link/BwXRiRrbJBSuZHT66"
+  },
+  "feed_back": {},
+  "histories_count": 6,
+  "incomplete_wo": [],
+  "invoice_cost": 0,
+  "is_ball_in_court": true,
+  "labor_cost": 0,
+  "originator": {
+    "company": {
+      "address": null,
+      "city": null,
+      "code": "SWD",
+      "country": null,
+      "description": null,
+      "email": null,
+      "end": null,
+      "id": 3,
+      "image": "SwiftDynamics/b1f7a66c-515a-4230-99f0-6d131eb09f1a/company/logo/dc9cfff8-b946-436a-afe0-497e9e877482",
+      "level": 0,
+      "name": null,
+      "organization": {
+        "code": "SWD",
+        "id": 1,
+        "logo": null,
+        "storage_usage": 6312961563,
+        "title": "SwiftDynamics"
+      },
+      "phone": null,
+      "postcode": null,
+      "province": null,
+      "service": null,
+      "start": null,
+      "timezone": null,
+      "title": "Swift Dynamics",
+      "user_count": 21
+    },
+    "email": "superadmin@swiftdynamics.co.th",
+    "first_name": "Superadmin",
+    "full_name": "Superadmin SWD",
+    "id": 1,
+    "is_notification": false,
+    "is_superuser": true,
+    "last_login": "2024-06-20T07:59:24.783733Z",
+    "last_name": "SWD",
+    "organization": {
+      "code": "SWD",
+      "id": 1,
+      "logo": null,
+      "storage_usage": 6312961563,
+      "title": "SwiftDynamics"
+    },
+    "permission": 0,
+    "phone": "082804131945454",
+    "position": "Project Manager",
+    "shortcut_name": "SS",
+    "unit_cost": 1234
+  },
+  "part_cost": 0,
+  "parts": [],
+  "plan_mode": false,
+  "pm": null,
+  "priority": {
+    "id": 184,
+    "order": 2,
+    "style": "#34A853",
+    "title": "Low Priority"
+  },
+  "state": 1,
+
+  "ticket": {
+    "description": "<p>rsrsnsrn rt serthsrjsrjsrj</p>",
+    "facility": {
+      "address": "-",
+      "code": "1234",
+      "country": "Canada",
+      "created_at": "2022-11-03T02:34:40.347172Z",
+      "currency": null,
+      "description": "Second test",
+      "id": 1,
+      "image": "SwiftDynamics/065bf891-7fd2-40dd-86d3-a46d09332499/facility/logo/f9de4b75-5bbe-4872-ae85-fe0242440a7a",
+      "time_zone": "(GMT-09:00) Alaska Time",
+      "title": "Mobile Location Team",
+      "updated_at": "2024-06-05T08:34:08.614031Z"
+    },
+    "files": [
+      {
+        "id": 3971,
+        "path": "SwiftDynamics/065bf891-7fd2-40dd-86d3-a46d09332499/Report Tickets/1489/applogo.png",
+        "ticket_id": 251,
+        "title": "applogo.png",
+        "type": "image/png",
+        "url": "https://fm-sitearound-dev-storage.s3.amazonaws.com/SwiftDynamics/065bf891-7fd2-40dd-86d3-a46d09332499/Report%20Tickets/1489/applogo.png?AWSAccessKeyId=AKIAV27WOJCVVCWU5CHE&Signature=rTMZIbdXrQyWVTXVSh3uVH3SetY%3D&Expires=1718873978"
+      },
+      {
+        "id": 3972,
+        "path": "SwiftDynamics/065bf891-7fd2-40dd-86d3-a46d09332499/Report Tickets/1489/bg_logo.png",
+        "ticket_id": 252,
+        "title": "bg_logo.png",
+        "type": "image/png",
+        "url": "https://fm-sitearound-dev-storage.s3.amazonaws.com/SwiftDynamics/065bf891-7fd2-40dd-86d3-a46d09332499/Report%20Tickets/1489/bg_logo.png?AWSAccessKeyId=AKIAV27WOJCVVCWU5CHE&Signature=N%2Fbn7YtpU6jaPY4NKHxyiNpuPuU%3D&Expires=1718873978"
+      }
+    ],
+    "id": 1489,
+    "location": {
+      "calculation": null,
+      "display_name": "location A ห้ามลบ-Copy 2",
+      "have_child": true,
+      "id": 98,
+      "parent": null,
+      "setting": null,
+      "title": "location A ห้ามลบ-Copy 2",
+      "url": "https://fmdev.page.link/BwXRiRrbJBSuZHT66"
+    },
+    "priority": {
+      "id": 184,
+      "order": 2,
+      "style": "#34A853",
+      "title": "Low Priority"
+    },
+    "reporter_email": "GG@gmail.com",
+    "reporter_name": "SUper saiyan111111",
+    "reporter_phone": "0123456789",
+    "title": "qwertyui"
+  },
+  "time_spent": 0,
+  "total_cost": 0,
+  "will_create_on": null,
+  "workflows": []
+}
