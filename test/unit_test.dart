@@ -31,7 +31,8 @@ enum JsonFile {
 }
 
 Future<List<dynamic>> _loadJsonData({required TypeJson product, required JsonFile filename}) async {
-  final String response = await rootBundle.loadString('assets/jsons/${product.name}/${filename.name}.json');
+  // final String response = await rootBundle.loadString('assets/jsons/${product.name}/${filename.name}.json');
+  final String response = await rootBundle.loadString('assets/jsons/cm/choices.json');
   final data = await json.decode(response);
   return data;
 }

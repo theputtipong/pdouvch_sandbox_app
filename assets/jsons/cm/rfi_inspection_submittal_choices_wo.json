@@ -70,7 +70,12 @@
     "id": 1437,
     "user": {
       "id": 1,
-      "full_name": "Superioradmin Sitearound"
+      "full_name": "Superioradmin Sitearound",
+      "label": "Superioradmin Sitearound"
+    },
+    "work_order": {
+      "id": 211,
+      "label": "Test wo"
     },
     "status": {
       "id": 0,
@@ -106,7 +111,10 @@
       "full_name": "Superioradmin Sitearound"
     }
   ],
-  "specification": null,
+  "specification": {
+    "id": 10,
+    "label": "WIP AR"
+  },
   "discipline": {
     "id": 1,
     "label": "General"
@@ -147,7 +155,7 @@
       "full_name": "Superioradmin Sitearound"
     }
   ],
-  "delayed": null,
+  "delayed": 3,
   "has_file": false,
   "files": [],
   "inspection": {
@@ -559,5 +567,134 @@
     "total": 9,
     "pending": 1,
     "respond": 8
-  }
+  },
+  "submittal": {
+    "id": 430,
+    "user": {
+      "id": 1,
+      "full_name": "Superioradmin Sitearound"
+    },
+    "status": {
+      "id": 2,
+      "label": "Approved"
+    },
+    "created_by": {
+      "id": 1,
+      "full_name": "Superioradmin Sitearound"
+    },
+    "updated_by": {
+      "id": 1,
+      "full_name": "Superioradmin Sitearound"
+    },
+    "deleted": null,
+    "deleted_by_cascade": false,
+    "created_at": "2024-07-09T07:11:55.817693Z",
+    "updated_at": "2024-07-09T07:16:05.432022Z",
+    "document_number": "234243",
+    "rev": "32",
+    "due_date": "2024-07-09T16:59:59.999000Z",
+    "response": "test",
+    "response_date": "2024-07-09T07:16:05.423237Z",
+    "round": 0,
+    "cycle": 0,
+    "is_latest": true,
+    "rejected_to": null,
+    "document": 1377,
+    "files": []
+  },
+  "user_inspection_general": [
+    {
+      "value": 21,
+      "label": "Bank  testCHPP2"
+    },
+    {
+      "value": 20,
+      "label": "Bank testCHPP"
+    },
+    {
+      "value": 13,
+      "label": "Chanin Lawlertrattana"
+    },
+    {
+      "value": 50,
+      "label": "Pattarit General"
+    },
+    {
+      "value": 4,
+      "label": "Pattarit Suriyathakerng | G002"
+    },
+    {
+      "value": 8,
+      "label": "SWD - Supawan Koomkam"
+    },
+    {
+      "value": 49,
+      "label": "SWD - Yanisa Jitmun"
+    },
+    {
+      "value": 11,
+      "label": "Sapjarern Udomviriyalanon"
+    },
+    {
+      "value": 45,
+      "label": "Sirichai Saeaiew"
+    },
+    {
+      "value": 3,
+      "label": "Supawan Koomkam"
+    },
+    {
+      "value": 1,
+      "label": "Superioradmin Sitearound | G002, G001"
+    },
+    {
+      "value": 56,
+      "label": "Tanakorn AP"
+    },
+    {
+      "value": 16,
+      "label": "Test 1"
+    },
+    {
+      "value": 18,
+      "label": "Test 3"
+    },
+    {
+      "value": 19,
+      "label": "Test 4"
+    },
+    {
+      "value": 26,
+      "label": "Test Naja"
+    },
+    {
+      "value": 22,
+      "label": "Test Tum"
+    },
+    {
+      "value": 23,
+      "label": "Test Tum 2"
+    },
+    {
+      "value": 24,
+      "label": "Tum Nuttapat"
+    },
+    {
+      "value": 52,
+      "label": "Unikwan Cutie"
+    },
+    {
+      "value": 2,
+      "label": "Varit J"
+    },
+    {
+      "value": 9,
+      "label": "supawan koomkam"
+    }
+  ],
+  "from_inspection": {
+    "id": 1375,
+    "label": "CMPRO-I00292 | Test form"
+  },
+  "sub_section": 2581
 }
