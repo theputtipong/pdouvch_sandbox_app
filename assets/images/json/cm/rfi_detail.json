@@ -1,0 +1,151 @@
+{
+  "id": 1371,
+  "title": "ฟหฟดฟกฟหกหฟกหฟ",
+  "type": {
+    "id": 0,
+    "label": "RFI"
+  },
+  "status": {
+    "id": 1,
+    "label": "In Process"
+  },
+  "process": {
+    "id": 2,
+    "label": "Open"
+  },
+  "code": "CMPRO-R00095",
+  "due_date": "2024-07-07T16:59:59.999000Z",
+  "order": 0,
+  "deleted": null,
+  "drawing_number": null,
+  "cost_impact": -1.0,
+  "description": "",
+  "location": null,
+  "is_private": false,
+  "cycle": 0,
+  "assignees": [
+    {
+      "id": 2954,
+      "state": {
+        "id": 0,
+        "label": "Or"
+      },
+      "status": {
+        "id": 0,
+        "label": "Pending"
+      },
+      "user": {
+        "id": 3,
+        "full_name": "Supawan Koomkam"
+      },
+      "document": {
+        "id": 1371,
+        "code": "CMPRO-R00095"
+      },
+      "files": [],
+      "is_all_sub_assignee_done": true,
+      "created_at": "2024-07-04T02:29:39.067535Z",
+      "updated_at": "2024-07-04T02:29:39.067543Z",
+      "order": 0,
+      "due_date": "2024-07-05T16:59:59.999000Z",
+      "response": null,
+      "response_date": null,
+      "round": 0,
+      "cycle": 0,
+      "rejected_to": "",
+      "is_latest": true,
+      "is_open": true,
+      "is_official": false,
+      "created_by": {
+        "id": 19,
+        "full_name": "Test 4"
+      },
+      "updated_by": {
+        "id": 19,
+        "full_name": "Test 4"
+      }
+    }
+  ],
+  "manager": {
+    "id": 1433,
+    "user": {
+      "id": 1,
+      "full_name": "Superioradmin Sitearound"
+    },
+    "status": {
+      "id": 0,
+      "label": "Pending"
+    },
+    "files": [],
+    "created_at": "2024-07-04T02:29:39.063139Z",
+    "updated_at": "2024-07-04T02:29:39.063148Z",
+    "due_date": "2024-07-07T16:59:59.999000Z",
+    "response": null,
+    "response_date": null,
+    "round": 0,
+    "cycle": 0,
+    "is_latest": true,
+    "is_official": false,
+    "rejected_to": null,
+    "created_by": {
+      "id": 19,
+      "full_name": "Test 4"
+    },
+    "updated_by": {
+      "id": 19,
+      "full_name": "Test 4"
+    },
+    "document": {
+      "id": 1371,
+      "code": "CMPRO-R00095"
+    }
+  },
+  "distribution_list": [],
+  "specification": {
+    "id": 10,
+    "label": "WIP AR"
+  },
+  "discipline": {
+    "id": 2,
+    "label": "Structure (งานโครงสร้าง)"
+  },
+  "schedule_impact": -1.0,
+  "template": {
+    "id": 19,
+    "label": "RFI - ST"
+  },
+  "created_at": "2024-07-04T02:29:39.048923Z",
+  "updated_at": "2024-07-04T02:29:39.048933Z",
+  "project": {
+    "id": 3,
+    "code": "CMPRO",
+    "title": "CM Project",
+    "company": {
+      "id": 1,
+      "code": "SWD",
+      "title": "Swift Dynamics"
+    }
+  },
+  "responsible_contractor": null,
+  "received_from": null,
+  "is_respondable": false,
+  "is_recently_rejected": false,
+  "overrule_markup_list": [],
+  "created_by": {
+    "id": 19,
+    "full_name": "Test 4"
+  },
+  "updated_by": {
+    "id": 19,
+    "full_name": "Test 4"
+  },
+  "ball_in_court": [
+    {
+      "id": 3,
+      "full_name": "Supawan Koomkam"
+    }
+  ],
+  "delayed": 3,
+  "has_file": false,
+  "files": []
+}
