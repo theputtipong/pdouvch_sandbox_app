@@ -1,0 +1,162 @@
+{
+  "id": 211,
+  "assignee": {
+    "id": 226,
+    "user": {
+      "id": 1,
+      "label": "Superioradmin Sitearound"
+    },
+    "work_order": {
+      "id": 211,
+      "label": "Test wo"
+    },
+    "due_date": "2024-07-09T00:00:00Z",
+    "status": {
+      "id": 0,
+      "label": "Pending"
+    },
+    "response": null,
+    "response_date": null,
+    "files": []
+  },
+  "manager": {
+    "id": 226,
+    "user": {
+      "id": 1,
+      "label": "Superioradmin Sitearound"
+    },
+    "work_order": {
+      "id": 211,
+      "label": "Test wo"
+    },
+    "due_date": "2024-07-09T00:00:00Z",
+    "status": {
+      "id": 0,
+      "label": "Pending"
+    },
+    "response": null,
+    "response_date": null,
+    "files": []
+  },
+  "status": {
+    "id": 1,
+    "label": "In Process"
+  },
+  "process": {
+    "id": 2,
+    "label": "Open"
+  },
+  "distribution_list": [],
+  "template": null,
+  "specification": null,
+  "type": null,
+  "discipline": {
+    "id": 1,
+    "label": "General"
+  },
+  "location": null,
+  "from_inspection": {
+    "id": 1375,
+    "label": "CMPRO-I00292 | Test form"
+  },
+  "ball_in_court": [
+    {
+      "id": 1,
+      "full_name": "Superioradmin Sitearound"
+    }
+  ],
+  "responsible_contractor": null,
+  "received_from": null,
+  "is_respondable": true,
+  "created_at": "2024-07-09T08:30:32.730114Z",
+  "updated_at": "2024-07-09T08:30:32.730125Z",
+  "code": "CMPRO-W00093",
+  "title": "Test wo",
+  "due_date": "2024-07-09T16:59:59Z",
+  "cycle": 0,
+  "is_private": false,
+  "description": "",
+  "is_recently_rejected": false,
+  "sub_section": 2581,
+  "project": {
+    "id": 3,
+    "code": "CMPRO",
+    "title": "CM Project",
+    "company": {
+      "id": 1,
+      "code": "SWD",
+      "title": "Swift Dynamics"
+    }
+  },
+  "created_by": {
+    "id": 1,
+    "full_name": "Superioradmin Sitearound"
+  },
+  "updated_by": {
+    "id": 1,
+    "full_name": "Superioradmin Sitearound"
+  },
+  "files": [],
+  "has_file": false,
+  "delayed": 1,
+  "section": {
+    "id": 853,
+    "title": "Title 1",
+    "order": 0,
+    "sub_section": {
+      "id": 2581,
+      "title": "date",
+      "description": "",
+      "order": 2,
+      "type": {
+        "id": 5,
+        "choices": [],
+        "is_score": false,
+        "response_type": 5,
+        "is_multiselect": false
+      },
+      "comments": [
+        {
+          "id": 346,
+          "created_at": "2024-07-09T08:29:23.613571Z",
+          "updated_at": "2024-07-09T08:29:23.613581Z",
+          "comment": "test",
+          "sub_section": 2581,
+          "created_by": {
+            "id": 1,
+            "full_name": "Superioradmin Sitearound"
+          },
+          "updated_by": {
+            "id": 1,
+            "full_name": "Superioradmin Sitearound"
+          },
+          "file": null
+        },
+        {
+          "id": 347,
+          "created_at": "2024-07-09T08:29:29.854081Z",
+          "updated_at": "2024-07-09T08:29:29.854092Z",
+          "comment": "test",
+          "sub_section": 2581,
+          "created_by": {
+            "id": 1,
+            "full_name": "Superioradmin Sitearound"
+          },
+          "updated_by": {
+            "id": 1,
+            "full_name": "Superioradmin Sitearound"
+          },
+          "file": null
+        }
+      ],
+      "response": {
+        "id": 1356,
+        "result": "\"2024-07-15 00:00:00.000\"",
+        "files": []
+      },
+      "files": []
+    },
+    "document": 1375,
+    "has_inspection_permission": true
+  }
+}
