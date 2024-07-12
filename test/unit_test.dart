@@ -7,12 +7,18 @@ import 'package:flutter_test/flutter_test.dart';
 
 import 'base_response.dart';
 import 'master_document.dart';
+import 'widget_test.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
   group('JSONS Load Test', () {
-    test('should load JSONS data from assets ${TypeJson.fm} : ${JsonFile.documents}', () async {
-      final data = await _loadJsonData(product: TypeJson.cm, filename: JsonFile.rfi_detail);
+    test('should load JSONS data from assets test document${TypeJson.fm} : ${JsonFile.documents}', () async {
+      final data = await loadJsonMasterData(product: TypeJson.cm, filename: JsonFile.rfi_detail);
+      expect(data, isNotEmpty);
+    });
+
+    test('should load JSONS data from assets test field setting', () async {
+      final data = await loadJsonFieldSettingData();
       expect(data, isNotEmpty);
     });
   });
@@ -31,10 +37,11 @@ enum JsonFile {
   submittal_detail,
   wo_detail,
   document_detail,
-  documents
+  documents,
+  field_setting
 }
 
-Future<List<MasterDocument>> _loadJsonData({required TypeJson product, required JsonFile filename}) async {
+Future<List<MasterDocument>> loadJsonMasterData({required TypeJson product, required JsonFile filename}) async {
   final String response = await rootBundle.loadString('assets/jsons/${product.name}/${filename.name}.json');
   List<MasterDocument> masterDocuments = [];
   var data = json.decode(response)['results'];
@@ -45,7 +52,6 @@ Future<List<MasterDocument>> _loadJsonData({required TypeJson product, required 
       masterDocuments.add(masterDocumentFromJson(element));
     }
   }
-
   BaseResponse<MasterDocument> baseResponse = BaseResponse<MasterDocument>(
     null,
     null,

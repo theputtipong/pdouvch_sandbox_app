@@ -1,7 +1,7 @@
 import 'package:json_annotation/json_annotation.dart';
 import 'dart:convert';
 
-part 'field_setting_model.g.dart';
+part 'field_setting.g.dart';
 
 List<FieldSettingModel> fieldSettingModelFromJson(String str) =>
     List<FieldSettingModel>.from(json.decode(str).map((x) => FieldSettingModel.fromJson(x)));

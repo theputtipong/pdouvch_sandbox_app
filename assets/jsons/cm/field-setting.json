@@ -1,0 +1,123 @@
+[
+  {
+    "id": 135,
+    "title": "Discipline",
+    "key": "discipline",
+    "type": 4,
+    "is_required": true,
+    "is_editable": false,
+    "tool": 8,
+    "company": 1,
+    "project": 3
+  },
+  {
+    "id": 138,
+    "title": "Due Date",
+    "key": "due_date",
+    "type": 2,
+    "is_required": true,
+    "is_editable": false,
+    "tool": 8,
+    "company": 1,
+    "project": 3
+  },
+  {
+    "id": 137,
+    "title": "Subject",
+    "key": "subject",
+    "type": 0,
+    "is_required": true,
+    "is_editable": false,
+    "tool": 8,
+    "company": 1,
+    "project": 3
+  },
+  {
+    "id": 145,
+    "title": "Description",
+    "key": "description",
+    "type": 0,
+    "is_required": false,
+    "is_editable": true,
+    "tool": 8,
+    "company": 1,
+    "project": 3
+  },
+  {
+    "id": 139,
+    "title": "Distribution List",
+    "key": "distribution_list",
+    "type": 5,
+    "is_required": false,
+    "is_editable": true,
+    "tool": 8,
+    "company": 1,
+    "project": 3
+  },
+  {
+    "id": 140,
+    "title": "Drawing Number",
+    "key": "drawing_number",
+    "type": 1,
+    "is_required": false,
+    "is_editable": true,
+    "tool": 8,
+    "company": 1,
+    "project": 3
+  },
+  {
+    "id": 142,
+    "title": "Location",
+    "key": "location",
+    "type": 4,
+    "is_required": false,
+    "is_editable": true,
+    "tool": 8,
+    "company": 1,
+    "project": 3
+  },
+  {
+    "id": 144,
+    "title": "Received From",
+    "key": "received_from",
+    "type": 4,
+    "is_required": false,
+    "is_editable": true,
+    "tool": 8,
+    "company": 1,
+    "project": 3
+  },
+  {
+    "id": 143,
+    "title": "Responsible Contractor",
+    "key": "responsible_contractor",
+    "type": 4,
+    "is_required": false,
+    "is_editable": true,
+    "tool": 8,
+    "company": 1,
+    "project": 3
+  },
+  {
+    "id": 141,
+    "title": "Specification",
+    "key": "specification",
+    "type": 4,
+    "is_required": false,
+    "is_editable": true,
+    "tool": 8,
+    "company": 1,
+    "project": 3
+  },
+  {
+    "id": 136,
+    "title": "Template",
+    "key": "template",
+    "type": 4,
+    "is_required": false,
+    "is_editable": true,
+    "tool": 8,
+    "company": 1,
+    "project": 3
+  }
+]
