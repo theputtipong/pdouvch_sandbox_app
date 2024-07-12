@@ -12,8 +12,8 @@ import 'widget_test.dart';
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
   group('JSONS Load Test', () {
-    test('should load JSONS data from assets test document${TypeJson.fm} : ${JsonFile.documents}', () async {
-      final data = await loadJsonMasterData(product: TypeJson.cm, filename: JsonFile.rfi_detail);
+    test('should load JSONS data from assets test document${TypeJson.cm} : ${JsonFile.choices}', () async {
+      final data = await loadJsonMasterData(product: TypeJson.cm, filename: JsonFile.choices);
       expect(data, isNotEmpty);
     });
 

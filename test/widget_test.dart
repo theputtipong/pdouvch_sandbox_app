@@ -13,12 +13,11 @@ import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'field_setting.dart';
-import 'unit_test.dart';
 
 void main() {
   group('MyWidget', () {
     List<FieldSettingModel> data = [];
-    List<String?> dataWidgets = [];
+    List<String?> objectModel = [];
     test('should load JSONS data from assets test field setting', () async {
       data = await loadJsonFieldSettingData();
       expect(data, isNotEmpty);
@@ -31,7 +30,7 @@ void main() {
             body: ListView.builder(
               itemCount: data.length,
               itemBuilder: (context, index) {
-                return typeWidget(data[index], ctx: context, listWidgets: dataWidgets);
+                return typeWidget(data[index], ctx: context, listObject: objectModel);
               },
             ),
           ),
@@ -40,7 +39,7 @@ void main() {
 
       expect(find.byType(Text), findsNWidgets(data.length));
 
-      expect(dataWidgets.length, data.length);
+      expect(objectModel.length, data.length);
     });
   });
 }
@@ -51,9 +50,9 @@ Future<List<FieldSettingModel>> loadJsonFieldSettingData() async {
   return data;
 }
 
-Widget typeWidget(FieldSettingModel value, {BuildContext? ctx, required List<String?> listWidgets}) {
+Widget typeWidget(FieldSettingModel value, {BuildContext? ctx, required List<String?> listObject}) {
   Widget result = const Text('default');
-  listWidgets.add(null);
+  listObject.add(null);
   switch (value.type) {
     case 0:
       if (ctx == null) {
@@ -74,7 +73,7 @@ Widget typeWidget(FieldSettingModel value, {BuildContext? ctx, required List<Str
       break;
     case 1:
       result = DropdownButton<String?>(
-        value: listWidgets.last,
+        value: listObject.last,
         hint: Text(value.title ?? ''),
         items: ['One', 'Two', 'Free', 'Four'].map((String value) {
           return DropdownMenuItem<String>(
