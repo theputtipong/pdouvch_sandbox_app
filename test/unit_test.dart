@@ -1,20 +1,22 @@
 // ignore_for_file: constant_identifier_names
 
-import 'dart:convert';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
+
+import 'base_response.dart';
+import 'master_document.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
   group('JSONS Load Test', () {
-    test('should load JSONS data from assets ${TypeJson.cm} : ${JsonFile.choices}', () async {
-      final data = await _loadJsonData(product: TypeJson.cm, filename: JsonFile.choices);
+    test('should load JSONS data from assets ${TypeJson.fm} : ${JsonFile.documents}', () async {
+      final data = await _loadJsonData(product: TypeJson.fm, filename: JsonFile.documents);
       expect(data, isNotEmpty);
     });
   });
 }
 
-enum TypeJson { cm, pm }
+enum TypeJson { cm, fm }
 
 enum JsonFile {
   choices,
@@ -30,9 +32,9 @@ enum JsonFile {
   documents
 }
 
-Future<List<dynamic>> _loadJsonData({required TypeJson product, required JsonFile filename}) async {
-  // final String response = await rootBundle.loadString('assets/jsons/${product.name}/${filename.name}.json');
-  final String response = await rootBundle.loadString('assets/jsons/cm/choices.json');
-  final data = await json.decode(response);
+Future<MasterDocument> _loadJsonData({required TypeJson product, required JsonFile filename}) async {
+  final String response = await rootBundle.loadString('assets/jsons/${product.name}/${filename.name}.json');
+  MasterDocument data = masterDocumentFromJson(response);
+  BaseResponse<MasterDocument> baseResponse = BaseResponse<MasterDocument>();
   return data;
 }
