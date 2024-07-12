@@ -985,7 +985,7 @@ class UpdatedBy {
   @JsonKey(name: "id")
   int? id;
   @JsonKey(name: "full_name")
-  FullName? fullName;
+  String? fullName;
 
   UpdatedBy({
     this.id,
@@ -994,7 +994,7 @@ class UpdatedBy {
 
   UpdatedBy copyWith({
     int? id,
-    FullName? fullName,
+    String? fullName,
   }) =>
       UpdatedBy(
         id: id ?? this.id,
@@ -1005,13 +1005,6 @@ class UpdatedBy {
 
   Map<String, dynamic> toJson() => _$UpdatedByToJson(this);
 }
-
-enum FullName {
-  @JsonValue("Superioradmin Sitearound")
-  SUPERIORADMIN_SITEAROUND
-}
-
-final fullNameValues = EnumValues({"Superioradmin Sitearound": FullName.SUPERIORADMIN_SITEAROUND});
 
 @JsonSerializable()
 class Document {
@@ -1046,7 +1039,7 @@ class BallInCourt {
   @JsonKey(name: "_comment")
   String? comment;
   @JsonKey(name: "full_name")
-  FullName? fullName;
+  String? fullName;
 
   BallInCourt({
     this.id,
@@ -1057,7 +1050,7 @@ class BallInCourt {
   BallInCourt copyWith({
     int? id,
     String? comment,
-    FullName? fullName,
+    String? fullName,
   }) =>
       BallInCourt(
         id: id ?? this.id,
@@ -1118,7 +1111,7 @@ class CreatedBy {
   @JsonKey(name: "id")
   int? id;
   @JsonKey(name: "full_name")
-  FullName? fullName;
+  String? fullName;
   @JsonKey(name: "company")
   Company? company;
   @JsonKey(name: "email")
@@ -1162,7 +1155,7 @@ class CreatedBy {
   CreatedBy copyWith({
     String? comment,
     int? id,
-    FullName? fullName,
+    String? fullName,
     Company? company,
     String? email,
     String? firstName,
@@ -1805,9 +1798,9 @@ class User {
   @JsonKey(name: "id")
   int? id;
   @JsonKey(name: "full_name")
-  FullName? fullName;
+  String? fullName;
   @JsonKey(name: "label")
-  FullName? label;
+  String? label;
 
   User({
     this.id,
@@ -1817,8 +1810,8 @@ class User {
 
   User copyWith({
     int? id,
-    FullName? fullName,
-    FullName? label,
+    String? fullName,
+    String? label,
   }) =>
       User(
         id: id ?? this.id,

@@ -1,5 +1,7 @@
 // ignore_for_file: constant_identifier_names
 
+import 'dart:convert';
+
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 
@@ -10,7 +12,7 @@ void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
   group('JSONS Load Test', () {
     test('should load JSONS data from assets ${TypeJson.fm} : ${JsonFile.documents}', () async {
-      final data = await _loadJsonData(product: TypeJson.fm, filename: JsonFile.documents);
+      final data = await _loadJsonData(product: TypeJson.cm, filename: JsonFile.rfi_detail);
       expect(data, isNotEmpty);
     });
   });
@@ -32,9 +34,27 @@ enum JsonFile {
   documents
 }
 
-Future<MasterDocument> _loadJsonData({required TypeJson product, required JsonFile filename}) async {
+Future<List<MasterDocument>> _loadJsonData({required TypeJson product, required JsonFile filename}) async {
   final String response = await rootBundle.loadString('assets/jsons/${product.name}/${filename.name}.json');
-  MasterDocument data = masterDocumentFromJson(response);
-  BaseResponse<MasterDocument> baseResponse = BaseResponse<MasterDocument>();
-  return data;
+  List<MasterDocument> masterDocuments = [];
+  var data = json.decode(response)['results'];
+  if (data == null) {
+    masterDocuments.add(masterDocumentFromJson(response));
+  } else {
+    for (var element in data) {
+      masterDocuments.add(masterDocumentFromJson(element));
+    }
+  }
+
+  BaseResponse<MasterDocument> baseResponse = BaseResponse<MasterDocument>(
+    null,
+    null,
+    null,
+    null,
+    masterDocuments,
+    null,
+    null,
+    null,
+  );
+  return baseResponse.results ?? [];
 }

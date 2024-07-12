@@ -525,17 +525,13 @@ Map<String, dynamic> _$AssigneeElementToJson(AssigneeElement instance) =>
 
 UpdatedBy _$UpdatedByFromJson(Map<String, dynamic> json) => UpdatedBy(
       id: (json['id'] as num?)?.toInt(),
-      fullName: $enumDecodeNullable(_$FullNameEnumMap, json['full_name']),
+      fullName: json['full_name'] as String?,
     );
 
 Map<String, dynamic> _$UpdatedByToJson(UpdatedBy instance) => <String, dynamic>{
       'id': instance.id,
-      'full_name': _$FullNameEnumMap[instance.fullName],
+      'full_name': instance.fullName,
     };
-
-const _$FullNameEnumMap = {
-  FullName.SUPERIORADMIN_SITEAROUND: 'Superioradmin Sitearound',
-};
 
 Document _$DocumentFromJson(Map<String, dynamic> json) => Document(
       id: (json['id'] as num?)?.toInt(),
@@ -550,14 +546,14 @@ Map<String, dynamic> _$DocumentToJson(Document instance) => <String, dynamic>{
 BallInCourt _$BallInCourtFromJson(Map<String, dynamic> json) => BallInCourt(
       id: (json['id'] as num?)?.toInt(),
       comment: json['_comment'] as String?,
-      fullName: $enumDecodeNullable(_$FullNameEnumMap, json['full_name']),
+      fullName: json['full_name'] as String?,
     );
 
 Map<String, dynamic> _$BallInCourtToJson(BallInCourt instance) =>
     <String, dynamic>{
       'id': instance.id,
       '_comment': instance.comment,
-      'full_name': _$FullNameEnumMap[instance.fullName],
+      'full_name': instance.fullName,
     };
 
 Category _$CategoryFromJson(Map<String, dynamic> json) => Category(
@@ -583,7 +579,7 @@ Map<String, dynamic> _$CategoryToJson(Category instance) => <String, dynamic>{
 CreatedBy _$CreatedByFromJson(Map<String, dynamic> json) => CreatedBy(
       comment: json['_comment'] as String?,
       id: (json['id'] as num?)?.toInt(),
-      fullName: $enumDecodeNullable(_$FullNameEnumMap, json['full_name']),
+      fullName: json['full_name'] as String?,
       company: json['company'] == null
           ? null
           : Company.fromJson(json['company'] as Map<String, dynamic>),
@@ -604,7 +600,7 @@ CreatedBy _$CreatedByFromJson(Map<String, dynamic> json) => CreatedBy(
 Map<String, dynamic> _$CreatedByToJson(CreatedBy instance) => <String, dynamic>{
       '_comment': instance.comment,
       'id': instance.id,
-      'full_name': _$FullNameEnumMap[instance.fullName],
+      'full_name': instance.fullName,
       'company': instance.company,
       'email': instance.email,
       'first_name': instance.firstName,
@@ -922,14 +918,14 @@ Map<String, dynamic> _$ManagerToJson(Manager instance) => <String, dynamic>{
 
 User _$UserFromJson(Map<String, dynamic> json) => User(
       id: (json['id'] as num?)?.toInt(),
-      fullName: $enumDecodeNullable(_$FullNameEnumMap, json['full_name']),
-      label: $enumDecodeNullable(_$FullNameEnumMap, json['label']),
+      fullName: json['full_name'] as String?,
+      label: json['label'] as String?,
     );
 
 Map<String, dynamic> _$UserToJson(User instance) => <String, dynamic>{
       'id': instance.id,
-      'full_name': _$FullNameEnumMap[instance.fullName],
-      'label': _$FullNameEnumMap[instance.label],
+      'full_name': instance.fullName,
+      'label': instance.label,
     };
 
 Priority _$PriorityFromJson(Map<String, dynamic> json) => Priority(
