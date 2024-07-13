@@ -53,7 +53,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.pdouvch.sandboxflutter"
+        applicationId "com.pdouvch.sandboxflutter"
         minSdkVersion flutterMinSdkVersion.toInteger()
         targetSdkVersion flutterTargetSdkVersion.toInteger()
         versionCode flutterVersionCode.toInteger()
@@ -79,10 +79,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-}
-
-dependencies {
-    implementation 'com.google.android.gms:play-services-location:21.3.0'
 }
 
 flutter {
