@@ -1,3 +1,4 @@
+import 'dart:developer';
 import 'dart:io';
 import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
@@ -32,6 +33,13 @@ class MapView extends StatelessWidget {
             return Stack(
               children: [
                 GoogleMap(
+                  onLongPress: (argument) async {
+                    await downloadFile(
+                      urlDownload:
+                          'https://geekflare.com/cdn-cgi/image/width=1200,height=630,fit=crop,quality=90,format=auto,onerror=redirect,metadata=none/wp-content/uploads/2023/10/Ways-to-Download-Files-from-a-URL-Using-Python.jpg',
+                      fileName: 'test.jpg',
+                    );
+                  },
                   onMapCreated: (GoogleMapController controller) =>
                       locationCubit.setGoogleMapController(controller: controller),
                   initialCameraPosition:
@@ -60,13 +68,14 @@ class MapView extends StatelessWidget {
     bool check = await _checkPermission();
     if (!check) return false;
     var dir = await getApplicationDocumentsDirectory();
-    String savePath = "${dir.path}/$fileName";
+    final path = dir.path;
+    String savePath = "$path/$fileName";
     try {
       var request = await http.Client().get(Uri.parse(urlDownload));
       var bytes = request.bodyBytes;
       File file = File(savePath);
       await file.writeAsBytes(bytes);
-
+      log('File saved at $path/$fileName');
       return true;
     } catch (e) {
       return false;
