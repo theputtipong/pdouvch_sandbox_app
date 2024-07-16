@@ -45,5 +45,12 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>This app needs access to location for track you in google map when open.</string>
+    <key>NSLocationTemporaryUsageDescriptionDictionary</key>
+    <dict>
+      <key>YourPurposeKey</key>
+      <string>The example App requires temporary access to the device&apos;s for track you in google map precise location.</string>
+    </dict>
 </dict>
 </plist>
