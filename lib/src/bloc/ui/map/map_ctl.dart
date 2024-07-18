@@ -1,5 +1,5 @@
-import 'cubits/location.dart';
-import 'cubits/timer.dart';
+import '../../cubits/location.dart';
+import '../../cubits/timer.dart';
 
 class MapController {
   final LocationCubit locationCubit;

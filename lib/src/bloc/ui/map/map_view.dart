@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'cubits/cubits.dart';
+import '../../cubits/cubits.dart';
 import 'map_ctl.dart';
 
 class MapView extends StatelessWidget {
