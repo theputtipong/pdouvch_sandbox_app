@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 import 'settings_serv.dart';
 
-class SettingsController with ChangeNotifier {
-  SettingsController(this._settingsService);
+class SettingsCtl with ChangeNotifier {
+  SettingsCtl(this._settingsService);
 
-  final SettingsService _settingsService;
+  final SettingsServ _settingsService;
 
   late ThemeMode _themeMode;
 
