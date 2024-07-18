@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class SettingsService {
+class SettingsServ {
   Future<ThemeMode> themeMode() async => ThemeMode.system;
 
   Future<void> updateThemeMode(ThemeMode theme) async {}

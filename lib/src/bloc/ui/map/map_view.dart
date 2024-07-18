@@ -7,6 +7,8 @@ import 'map_ctl.dart';
 class MapView extends StatelessWidget {
   const MapView({super.key});
 
+  static const routeName = '/map';
+
   @override
   Widget build(BuildContext context) {
     final mapController = RepositoryProvider.of<MapController>(context);

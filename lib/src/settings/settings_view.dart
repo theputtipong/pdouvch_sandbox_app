@@ -6,7 +6,7 @@ class SettingsView extends StatelessWidget {
 
   static const routeName = '/settings';
 
-  final SettingsController controller;
+  final SettingsCtl controller;
 
   @override
   Widget build(BuildContext context) {

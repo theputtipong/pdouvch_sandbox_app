@@ -3,7 +3,7 @@ import 'src/app.dart';
 import 'src/settings/settings.dart';
 
 void main() async {
-  final settingsController = SettingsController(SettingsService());
+  final settingsController = SettingsCtl(SettingsServ());
 
   await settingsController.loadSettings();
 
