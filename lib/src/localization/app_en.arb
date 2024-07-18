@@ -1,6 +1,6 @@
 {
   "@@locale": "en",
-  "appTitle": "pdouvch_sandbox_flutter",
+  "appTitle": "pdouvch-sandbox-flutter",
   "@appTitle": {
     "description": "The title of the application"
   }

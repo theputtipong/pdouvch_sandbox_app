@@ -1,4 +1,4 @@
-# pdouvch_sandbox_flutter
+# pdouvch-sandbox-flutter
 
 A new pdouvch sandbox flutter project.
 

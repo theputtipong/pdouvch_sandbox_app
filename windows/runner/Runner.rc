@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.pdouvch.sandboxflutter" "\0"
-            VALUE "FileDescription", "pdouvch_sandbox_flutter" "\0"
+            VALUE "FileDescription", "pdouvch-sandbox-flutter" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "pdouvch_sandbox_flutter" "\0"
+            VALUE "InternalName", "pdouvch-sandbox-flutter" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2024 com.pdouvch.sandboxflutter. All rights reserved." "\0"
-            VALUE "OriginalFilename", "pdouvch_sandbox_flutter.exe" "\0"
-            VALUE "ProductName", "pdouvch_sandbox_flutter" "\0"
+            VALUE "OriginalFilename", "pdouvch-sandbox-flutter.exe" "\0"
+            VALUE "ProductName", "pdouvch-sandbox-flutter" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
