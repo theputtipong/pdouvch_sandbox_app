@@ -5,5 +5,9 @@
   "due_date": "2024-08-04T16:59:59.999Z",
   "description": "",
   "distribution_list": [1, 2, 3],
-  "responsible_contractor": ["1", "2", "3", "4"]
+  "responsible_contractor": ["1", "2", "3", "4"],
+  "Obj_test": {
+    "test": "test",
+    "test2": "test2"
+  }
 }
