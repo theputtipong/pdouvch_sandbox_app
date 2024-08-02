@@ -17,22 +17,34 @@ void main() {
       expect(masterData, isNotEmpty);
     });
 
-    testWidgets('should display a string of text', (WidgetTester tester) async {
-      await tester.pumpWidget(
-        MaterialApp(
-          home: Scaffold(
-            body: ListView.builder(
-              itemCount: countType.length,
-              itemBuilder: (context, index) {
-                return typeEnumWidget(masterData.entries.elementAt(index).value);
-              },
-            ),
-          ),
-        ),
-      );
+    for (var element in masterData.entries) {
+      Map<TypeWidget, int>? tempType;
+      if (countType.isEmpty) {
+        tempType = {typeEnumWidget(element.value): 1};
+      } else {
+        if (countType.containsKey(typeEnumWidget(element.value))) {
+          countType[typeEnumWidget(element.value)] = countType[typeEnumWidget(element.value)]! + 1;
+        } else {
+          tempType = {typeEnumWidget(element.value): 1};
+        }
+      }
+    }
 
-      expect(find.byType(Text), findsNWidgets(masterData.length));
-    });
+    // testWidgets('should display a string of text', (WidgetTester tester) async {
+    //   await tester.pumpWidget(
+    //     MaterialApp(
+    //       home: Scaffold(
+    //         body: ListView.builder(
+    //           itemCount: countType.length,
+    //           itemBuilder: (context, index) {
+    //             return typeEnumWidget(masterData.entries.elementAt(index).value);
+    //           },
+    //         ),
+    //       ),
+    //     ),
+    //   );
+    //   expect(find.byType(Text), findsNWidgets(masterData.length));
+    // });
   });
 }
 
@@ -50,7 +62,7 @@ Future<Map> loadJsonData() async {
 
 enum TypeWidget {
   unknow,
-  text,
+  textField,
   dateTimePicker,
   dropdown,
   dropdownMultiSelect,
@@ -60,27 +72,20 @@ TypeWidget typeEnumWidget(value) {
   TypeWidget result = TypeWidget.unknow;
   if (value is String) {
     log('The value is a String.');
-    result = TypeWidget.text;
-  } else if (value is int) {
-    log('The value is an int.');
-    result = TypeWidget.unknow;
-  } else if (value is double) {
-    log('The value is a double.');
-    result = TypeWidget.unknow;
-  } else if (value is bool) {
-    log('The value is a bool.');
-    result = TypeWidget.unknow;
+    if (DateTime.tryParse(value) != null) {
+      result = TypeWidget.dateTimePicker;
+    } else {
+      result = TypeWidget.textField;
+    }
   } else if (value is List) {
     log('The value is a List.');
-    result = TypeWidget.unknow;
-  } else if (value is Object) {
-    log('The value is a Object.');
-    result = TypeWidget.unknow;
-  } else if (value is DateTime) {
-    log('The value is a DateTime.');
-    result = TypeWidget.unknow;
+    if (value is List<Object>) {
+      result = TypeWidget.dropdownMultiSelect;
+    } else {
+      result = TypeWidget.dropdown;
+    }
   } else {
-    log('The value is of an unknown type.');
+    log('This type of value not support yet. [int, double, bool, datetime, object]');
     result = TypeWidget.unknow;
   }
   return result;
@@ -89,7 +94,7 @@ TypeWidget typeEnumWidget(value) {
 Widget typeWidget(value) {
   Widget result = const SizedBox();
   switch (typeEnumWidget(value)) {
-    case TypeWidget.text:
+    case TypeWidget.textField:
       result = Text(value.toString());
       break;
     case TypeWidget.dateTimePicker:

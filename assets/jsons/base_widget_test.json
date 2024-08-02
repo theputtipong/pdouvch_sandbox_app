@@ -2,11 +2,17 @@
   "title": "Test payload",
   "discipline": 1.0,
   "template": 184,
-  "due_date": "2024-08-04T16:59:59.999Z",
+  "due_date": "2024-08-04 16:59:59.999Z",
   "description": "",
   "distribution_list": [1, 2, 3],
   "responsible_contractor": ["1", "2", "3", "4"],
-  "Obj_test": {
+  "list_Obj_multiselect": [
+    { "select": true, "message": "test1_message" },
+    { "select": false, "message": "test2_message" },
+    { "select": true, "message": "test3_message" },
+    { "select": false, "message": "test4_message" }
+  ],
+  "obj_test": {
     "test": "test",
     "test2": "test2"
   }
