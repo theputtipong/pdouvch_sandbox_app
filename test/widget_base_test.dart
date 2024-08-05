@@ -11,40 +11,48 @@ void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
   Map masterData = {};
   Map<TypeWidget, int> countType = {};
-  group('JSONS Load Test Base Widget', () {
-    test('should load JSONS data from assets file name base_widget_test.json', () async {
-      masterData = await loadJsonData();
-      expect(masterData, isNotEmpty);
-    });
 
-    for (var element in masterData.entries) {
-      Map<TypeWidget, int>? tempType;
-      if (countType.isEmpty) {
-        tempType = {typeEnumWidget(element.value): 1};
-      } else {
-        if (countType.containsKey(typeEnumWidget(element.value))) {
-          countType[typeEnumWidget(element.value)] = countType[typeEnumWidget(element.value)]! + 1;
+  group('Intergration test with load JSON data from assets', () {
+    setUpAll(() async {
+      masterData = await loadJsonData();
+
+      for (var element in masterData.entries) {
+        Map<TypeWidget, int>? tempType;
+        var type = typeEnumWidget(element.value);
+        if (countType.containsKey(type)) {
+          countType[type] = countType[type]! + 1;
         } else {
-          tempType = {typeEnumWidget(element.value): 1};
+          tempType = {type: 1};
+        }
+        if (tempType != null && tempType.isNotEmpty) {
+          countType.addEntries(tempType.entries);
         }
       }
-    }
+    });
 
-    // testWidgets('should display a string of text', (WidgetTester tester) async {
-    //   await tester.pumpWidget(
-    //     MaterialApp(
-    //       home: Scaffold(
-    //         body: ListView.builder(
-    //           itemCount: countType.length,
-    //           itemBuilder: (context, index) {
-    //             return typeEnumWidget(masterData.entries.elementAt(index).value);
-    //           },
-    //         ),
-    //       ),
-    //     ),
-    //   );
-    //   expect(find.byType(Text), findsNWidgets(masterData.length));
-    // });
+    test('verifies that the JSON data is not empty and countType is not empty', () {
+      expect(masterData, isNotEmpty);
+      expect(countType, isNotEmpty);
+    });
+
+    log("countType: ${countType.entries.map((e) => "${e.key}: ${e.value}").join('\n')}");
+
+    testWidgets('should display a string of text', (WidgetTester tester) async {
+      await tester.pumpWidget(
+        MaterialApp(
+          home: Scaffold(
+            body: ListView.builder(
+              itemCount: masterData.length,
+              itemBuilder: (context, index) {
+                return typeWidget(masterData.entries.elementAt(index).value);
+              },
+            ),
+          ),
+        ),
+      );
+
+      expect(find.byType(Text), findsNWidgets(masterData.length));
+    });
   });
 }
 
