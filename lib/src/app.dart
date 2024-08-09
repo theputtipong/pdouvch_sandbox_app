@@ -19,8 +19,8 @@ class MyApp extends StatelessWidget {
           GlobalCupertinoLocalizations.delegate,
         ],
         supportedLocales: [
-          Locale('en'), // English
-          Locale('th'), // Thailand
+          Locale('en'),
+          Locale('th'),
         ],
       ),
     );
