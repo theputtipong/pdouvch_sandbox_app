@@ -4,7 +4,7 @@ import 'package:provider/provider.dart';
 void main() {
   runApp(
     MultiProvider(
-      providers: [],
+      providers: const [],
       child: const MainApp(),
     ),
   );
