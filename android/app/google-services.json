@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "698666747322",
+    "project_id": "pdouvch-sandbox-app",
+    "storage_bucket": "pdouvch-sandbox-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:698666747322:android:a523735e8b27d8905dc983",
+        "android_client_info": {
+          "package_name": "com.example"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzjaiu-QugzG5Y7zHZTGdOBZghh7_k5Yk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:698666747322:android:dab963fa45eaf4ef5dc983",
+        "android_client_info": {
+          "package_name": "com.pdouvch.sandboxapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzjaiu-QugzG5Y7zHZTGdOBZghh7_k5Yk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:698666747322:android:431a565db5eb66235dc983",
+        "android_client_info": {
+          "package_name": "com.pdouvch_sandbox_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzjaiu-QugzG5Y7zHZTGdOBZghh7_k5Yk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

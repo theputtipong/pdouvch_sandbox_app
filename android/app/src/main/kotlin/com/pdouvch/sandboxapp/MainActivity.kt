@@ -1,4 +1,4 @@
-package com.example.pdouvch_sandbox_app
+package com.pdouvch.sandboxapp
 
 import io.flutter.embedding.android.FlutterActivity
 
